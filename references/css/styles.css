@@ -69,3 +69,56 @@ body {
     width: auto;
     margin-left: 2rem;
 }
+
+
+
+/* Projects Section */
+
+.projects-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.projects-item-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-decoration: underline;
+}
+
+.projects-item-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    list-style-type: none;
+}
+
+
+.accordion {
+    background-color: lightgray;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 0.9rem;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  .panel {
+    padding: 0 1.1rem;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

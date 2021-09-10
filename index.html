@@ -34,15 +34,22 @@
         <img class="about-me-3" src="./references/images/anon-person-image.jpg" alt="Picture of Aneeq Ali">
     </main>
 
-    <section>
-        <h2>Projects</h2>
+    <section class="projects-container" id="projects">
+        <h2 class="projects-item-1">Projects</h2>
         
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+        <ul class="projects-item-2">
+            <li>
+                <button class="accordion">Project 1 - Message Generator</button>
+                <div class="panel">
+                    <p>I made a simple random message generator which can be viewed on <a href="https://github.com/aneeq913/message-generator">GitHub</a></p>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Project 2 - Excursion</button>
+                <div class="panel">
+                  <p>I made a website using HTML and CSS which can be viewed on <a href="https://github.com/aneeq913/excursion">GitHub</a></p>
+                </div>
+            </li>
         </ul>
     </section>
 
@@ -62,5 +69,26 @@
         <img src="" alt="GitHub">
         <img src="" alt="LinkedIn">
     </section>
+
+    <!-- Acordian JavaScript Start -->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+        }
+    </script>
+
+    <!-- Acordian JavaScript End -->
 </body>
 </html>
