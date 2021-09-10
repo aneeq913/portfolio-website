@@ -3,6 +3,7 @@ body {
     background-color: whitesmoke;
 }
 
+/* Header Section */
 
 .header-container {
     display: grid;
@@ -33,3 +34,38 @@ body {
     margin: 0.8rem;
 }
 
+
+/* About Me Section */
+
+.about-me-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+}
+
+.about-me-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: end;
+    text-decoration: underline;
+
+}
+
+.about-me-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.about-me-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    height: 300px;
+    width: auto;
+    margin-left: 2rem;
+}
