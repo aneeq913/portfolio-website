@@ -153,3 +153,38 @@ body {
     height: 10rem;
     width: auto;
 }
+
+
+
+/* Contact Section Styling */
+
+.contact-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr 1fr; 
+}
+
+.contact-item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.contact-item-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.contact-item-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.contact-item-3 img {
+    height: 100px;
+}
